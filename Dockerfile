@@ -15,15 +15,3 @@ RUN apt-get install -y procps make gcc g++ python libpq-dev
 
 # Set up the environment
 ENV PYTHON /usr/bin/python
-
-# Copy package defs for Docker caching
-COPY package.json package-lock.json ./
-
-# Install packages
-RUN npm install --quiet
-
-# Copy runtime files
-COPY nodemon.json .babelrc ./
-
-# Copy built files
-COPY build ./build
