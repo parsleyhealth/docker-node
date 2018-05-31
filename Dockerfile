@@ -1,8 +1,4 @@
-# Dockerfile
-
-ARG NODE_TAG
-
-FROM node:8.11.2
+FROM node:8.11.2-wheezy
 
 LABEL maintainer="Michael Shick <m@shick.us>"
 
