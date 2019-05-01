@@ -1,4 +1,4 @@
-FROM node:8.11.2-stretch
+FROM node:8.16.0-stretch
 
 LABEL maintainer="Michael Shick <m@shick.us>"
 
